@@ -15,6 +15,15 @@ This bot will be deployed in aws lambda and accessed via api-gateway. For refere
     node --version
     ```
 
+- Environment Variables
+    ```
+    {
+        "Local": "true",
+        "MicrosoftAppID": "xxxxxx",
+        "MicrosoftAppPassword": "xxxxxxxxxxxxxxxx"
+    }
+    ```
+
 ## To try this sample
 
 - Clone the repository

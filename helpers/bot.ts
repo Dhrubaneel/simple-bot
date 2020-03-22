@@ -3,7 +3,7 @@
 
 import { ActivityHandler } from 'botbuilder';
 
-export class EmptyBot extends ActivityHandler {
+export class Bot extends ActivityHandler {
     constructor() {
         super();
         this.onMembersAdded(async (context, next) => {
