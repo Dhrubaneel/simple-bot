@@ -10,6 +10,9 @@ import { BotFrameworkAdapter } from 'botbuilder';
 // This bot's main dialog.
 import { Bot } from './helpers/bot';
 
+// import this to console log circular JSON
+const util = require('util');
+
 // Create HTTP server.
 const app = express();
 const port = process.env.port || process.env.PORT || 3978;
@@ -56,7 +59,7 @@ const myBot = new Bot();
 
 // Listen for incoming requests.
 app.post('/api/messages', (req, res) => {
-    console.log(req);
+    console.log(util.inspect(req));
     adapter.processActivity(req, res, async (context) => {
         // Route to main dialog.
         await myBot.run(context);
