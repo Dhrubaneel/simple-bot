@@ -17,7 +17,7 @@
     },
     "dependencies": {
         "aws-serverless-express": "^3.3.8",
-        "botbuilder": "^4.10.4",
+        "botbuilder": "^4.17.1",
         "express": "^4.17.1"
     },
     "devDependencies": {
