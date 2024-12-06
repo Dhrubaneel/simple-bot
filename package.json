@@ -18,7 +18,7 @@
     "dependencies": {
         "aws-serverless-express": "^3.3.8",
         "botbuilder": "^4.10.4",
-        "express": "^4.17.3"
+        "express": "^4.21.2"
     },
     "devDependencies": {
         "tslint": "^6.1.3",
